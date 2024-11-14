@@ -66,29 +66,29 @@ nav img {
 .banner {
     text-align: center;
     background-image:
-    linear-gradient(to bottom, rgba(26, 26, 28, 0.52), rgba(188, 188, 188, 0.73)), url('/logo/abstract-background-copyspace-brainstorm.jpg');
+    linear-gradient(to bottom, rgba(26, 26, 28, 0.52), rgba(175, 0, 38, 0.73)), url('/logo/abstract-background-copyspace-brainstorm.jpg');
     width:100%;
     height: 100vh;
     background-size: cover;
 }
 
-.banner h1 {
+/* .banner h1 {
     color: #ffffff;
     padding-top: 50px;
     font-weight: 700;
     font-size: 3rem;
-}
-.flag-container{
+} */
+/* .flag-container{
     width: 60%;
     margin: auto;
     text-align: center;
-}
+} */
 
 .box-container {
-    width: 70%;
+    width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 50px;
     color: #282828;
     font-size: 1.5rem;
     font-weight: 500;
@@ -99,14 +99,8 @@ nav img {
     justify-content: space-between;
     margin-top: 20px;
 }
-.row1 {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-    align-items: center;
-}
 
-.flag{
+/* .flag{
     width: 100px;
     height: auto;
     background-color: #ffffff;
@@ -114,28 +108,89 @@ nav img {
     object-fit: cover;
     padding: 1px;
    
-    /* box-shadow: 0 0 15px 0 rgb(212, 212, 212); */
-}
+} */
+ 
 
-.product-col h3 {
+/* .product-col h3 {
     color: #DB000C;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     background-color: #ffffff;
     padding: 5px 0 5px 0;
     border-radius: 10px;
     margin-top: 10px;
-}
+} */
 
 .product-col img {
     width: 250px;
-    height: 300px;
-    margin-top: 0;
-    border-radius: 30px;
-    border: #DB000C 5px solid;
+    height: 250px;
+    margin-top: 10px;
+    border-radius: 50%;
+    border: #fff 5px solid;
     object-fit: cover;
+    box-shadow: 0 0 15px 0 rgb(87, 87, 87);
     /* box-shadow: 0 0 15px 0 rgb(212, 212, 212); */
 }
+
+.team-name {
+    width: 80%;
+    margin: auto;
+    padding-top: 10px;
+}
+.team-col {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: flex-start;
+}
+.name-col h3{
+    font-size: 1.3rem;
+    color: #DB000C;
+    background-color: #eae9e9;
+    /* padding:  10px 0 10px 10px; */
+    text-align: center;
+    border-radius: 5px;
+}
+.name-col{
+    width: 250px;
+}
+.name-col img{
+    width: 50px;
+    border-radius: 5px;
+    margin-top: 5px;
+    position: relative;
+    margin-left: 8px;
+    display: inline-block;
+    
+}
+
+h4 {
+    margin-top: 10px;
+    color: #fff;
+}
+p{
+    margin-top: 10px;
+    color: #282828;
+}
+.partner h1{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 30px;
+    color: #DB000C;
+}
+/* .product-col img .flag{
+    width: 50px;
+    height: fit-content;
+    margin-top: 0;
+    border-radius: 0%;
+    border: #DB000C 5px solid;
+    object-fit: cover;
+    
+} */
+/* .flag{
+    width: 50px;
+    height: fit-content;
+} */
 
 .footer {
     margin-top: 20px;
@@ -236,16 +291,16 @@ nav img {
         background-size: cover;
     }
 
-    .flag-container{
+    /* .flag-container{
         width: 67%;
         margin: auto;
         text-align: center;
-    }
+    } */
 
     .box-container {
         width: 80%;
         font-size: 1.2rem;
-        padding-top: 5px;
+        padding-top: 1px;
     }
     .nav-links {
         flex: 1;
@@ -265,14 +320,59 @@ nav img {
     }
 
     .product-col img {
-        width: 85px;
-        height:100px;
-        border-radius:10px;
+        width: 60px;
+        height:60px;
+        border-radius: 50%;
         border: #DB000C 3px solid;
         object-fit: cover;
-        /* box-shadow: 0 0 15px 0 rgb(212, 212, 212); */
+        box-shadow: 0 0 15px 0 rgb(87, 87, 87);
     }
-    .flag{
+    .team-name {
+        width: 80%;
+        margin: auto;
+        padding-top: 0;
+    }
+    .team-col {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 0;
+    }
+    .name-col h3{
+        font-size: 0.5rem;
+        color: #DB000C;
+        background-color: #eae9e9;
+        /* padding:  10px 0 10px 10px; */
+        text-align: center;
+        border-radius: 3px;
+    }
+    .name-col{
+        width: 60px;
+    }
+    .name-col img{
+        width: 10px;
+        border-radius: 5px;
+        position: relative;
+        margin-left: 8px;
+        display: inline-block;
+        
+    }
+    
+    h4 {
+        margin-top: 5px;
+        color: #fff;
+    }
+    p{
+        margin-top: 5px;
+        color: #282828;
+    }
+    .partner h1{
+        font-size: 0.4rem;
+        text-align: center;
+        margin-top: 30px;
+        color: #DB000C;
+    }
+    /* .flag{
         width: 40px;
         height: 20px;
         background-color: #ffffff;
@@ -282,13 +382,13 @@ nav img {
         margin-top: 6px;
        
         /* box-shadow: 0 0 15px 0 rgb(212, 212, 212); */
-    }
+    } */
 
     .footer-nav ul li {
         display: none;
         padding: 20px 10px;
     }
-}
+
 
 @media (max-width: 480px) {
    
@@ -314,6 +414,55 @@ nav img {
     }
     .box-container {
         font-size: 1rem;
+    }
+
+
+    .team-name {
+        width: 80%;
+        margin: auto;
+        padding-top: 0;
+    }
+    .team-col {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 0;
+    }
+    .name-col h3{
+        font-size: 0.5rem;
+        color: #DB000C;
+        background-color: #eae9e9;
+        /* padding:  10px 0 10px 10px; */
+        text-align: center;
+        border-radius: 3px;
+    }
+    .name-col{
+        width: 60px;
+    }
+    .name-col img{
+        width: 10px;
+        border-radius: 5px;
+        position: relative;
+        margin-left: 8px;
+        display: inline-block;
+        
+    }
+    
+    h4 {
+        margin-top: 3px;
+        color: #fff;
+        font-size: 0.4rem;
+    }
+    p{
+        margin-top: 3px;
+        color: #282828;
+        font-size: 0.3rem;
+    }
+    .partner h1{
+        font-size: 0.4rem;
+        text-align: center;
+        margin-top: 30px;
+        color: #DB000C;
     }
 
     .nav-links ul  {
