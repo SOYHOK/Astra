@@ -253,7 +253,8 @@ nav img {
     margin-top: 40px;
     width: 100%;
     background-color: #282828;
-    border-top: 10px solid #DB000C  ;
+    border-top: 10px solid #DB000C;
+    bottom: 0;
 }
 
 
@@ -371,6 +372,7 @@ h5{
 @media (max-width: 480px) {
    
     .banner {
+        width: 100%;
         text-align: center;
         background: #DB000C;
         min-height: 30vh;
@@ -415,7 +417,9 @@ h5{
         margin-top: 10px;
         width: 100%;
         background-color: #282828;
-        border-top: 3px solid #DB000C  ;
+        border-top: 3px solid #DB000C;
+        bottom: 0;
+        
     }
     
     
