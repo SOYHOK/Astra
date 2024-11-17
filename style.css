@@ -410,6 +410,38 @@ h5{
     .product-col h3 {
         font-size: 1rem;
     }
+
+    .footer {
+        margin-top: 10px;
+        width: 100%;
+        background-color: #282828;
+        border-top: 3px solid #DB000C  ;
+    }
+    
+    
+    .footer-name {
+        width: 80%;
+        margin: auto;
+        padding-top: 5px;
+    }
+    .footer-list {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+        align-items: flex-start
+    }
+    h5{
+        font-size: 4px;
+        font-weight: 200;
+        color: #ffffff;
+        /* padding:  10px 0 10px 10px; */
+        text-align: start;
+        padding-bottom: 10px;
+    }
+    .footer-contact{
+        width: 60px;
+    }
+
 }
 /* new */
 
