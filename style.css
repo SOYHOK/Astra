@@ -1,137 +1,4 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    font-family: "Inter", sans-serif;
-}
-.header{
-    width: 100%;
-    background-color: #282828;
 
-}
-nav{
-    width: 80%;
-    display: flex;
-    padding: 0% 10%;
-    justify-content: space-between;
-    align-items: center;
-}
-nav img{
-    width: 150px;
-    padding-left: 60px;
-}
-.nav-links{
-    flex: 1;
-    text-align: right;
-    
-}
-.nav-links ul li{
-    font-weight: bold;
-    font-size: medium;
-    list-style: none;
-    display: inline-block;
-    padding: 0px 70px;
-    position: relative;
-}
-.nav-links ul li a{
-    color: #ffffff;
-    text-decoration: none;
-}
-.nav-links ul li::after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #DB000C;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-}
-.nav-links ul li:hover::after{
-    width: 100%; 
-}
-.banner{
-    text-align: center;
-    background: #DB000C;
-    min-height: 100vh;
-}
-.banner h1{
-    color: #ffffff;
-    padding-top: 20%;
-    font-weight: 700;
-    font-size: 3rem;
-}
-<!---product-->
-
-.our-product h1{
-    text-align: center;
-    color: #DB000C;
-
-}
-.box-container{
-    width: 75%;
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
-    text-align: center;
-    color: #282828;
-    font-size: 1.5rem;
-    font-weight: 500;
-
-}
-
-.row{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-}
-.product-col h3{
-    color: #282828;
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-.product-col img{
-    width: 500px;
-    margin-top: 30px;
-    border-radius: 30px;
-    border: #DB000C 5px solid;
-    box-shadow: 0 0 15px 0 rgb(128, 128, 128);
-
-}
-
-.footer{
-    margin-top: 20px;
-    width: 100%;
-    background-color: #DB000C;
-
-}
-
-.footer-nav{
-    flex: 1;
-    text-align: center;
-    
-}
-.footer-nav ul li{
-    font-weight: bold;
-    font-size: medium;
-    list-style: none;
-    display: inline-block;
-    padding: 50px 50px;
-    position: relative;
-}
-.footer-nav ul li::after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #DB000C;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-}
-.footer-nav ul li:hover::after{
-    width: 100%; 
-}
-
-
- */
  * {
     margin: 0;
     padding: 0;
@@ -197,19 +64,40 @@ nav img {
 }
 
 .banner {
-    text-align: center;
-    background-image:
-    linear-gradient(to bottom, rgba(26, 26, 28, 0.52), rgba(243, 0, 53, 0.73)), url('/assets/abstract-background-copyspace-brainstorm.jpg');
+    background-image: url('/assets/home.jpg');
     width:100%;
     height: 100vh;
     background-size: cover;
 }
 
 .banner h1 {
+    width: 50%;
+    margin-left: 10%;
     color: #ffffff;
-    padding-top: 20%;
+    padding-top: 7%;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2.8rem;
+}
+
+.banner p{
+    width: 45%;
+    margin-left: 10%;
+    margin-top: 30px;
+    color: #fff;
+    line-height: 1.7;
+}
+.products-service a{
+    width: 25%;
+    margin-left: 10%;
+    line-height: 8;
+    color: #fff;
+    background-color: #DB000C;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
 }
 
 .our-product h1 {
@@ -334,7 +222,7 @@ h5{
     .banner {
         text-align: center;
         background-image:
-        linear-gradient(to bottom, rgba(26, 26, 28, 0.52), rgba(243, 0, 53, 0.73)), url('/logo/abstract-background-copyspace-brainstorm.jpg');
+        linear-gradient(to bottom, rgba(26, 26, 28, 0.52), rgba(243, 0, 53, 0.73)), url('/assets/home.jpg');
         width:100%;
         height: 30vh;
         background-size: cover;
@@ -342,7 +230,7 @@ h5{
 
     .banner h1 {
         font-size: 1.2rem;
-        padding-top: 25%;
+        margin-top: 0;
     }
 
     .box-container {
@@ -372,10 +260,32 @@ h5{
 @media (max-width: 480px) {
    
     .banner {
-        width: 100%;
         text-align: center;
-        background: #DB000C;
-        min-height: 30vh;
+        background-image:
+        linear-gradient(to bottom, rgba(26, 26, 28, 0.52), rgba(243, 0, 53, 0.73)), url('/assets/home.jpg');
+        width:100%;
+        height: 30vh;
+        background-size: cover;
+    }
+    .banner p{
+        width: 70%;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 10px;
+        color: #fff;
+        line-height: 1;
+        font-size: small;
+    }
+    .products-service a{
+        text-align: center;
+        line-height: 2;
+        color: #DB000C;
+        background-color: #ffffff;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: 300;
+        text-align: center;
+        padding: 5px 10px 5px 10px;
     }
     .menu_icon{
         position: absolute;
@@ -386,8 +296,9 @@ h5{
         display: block;
     }
     .banner h1 {
-        font-size: 1.2rem;
-        padding-top: 25%;
+        width: 80%;
+        font-size: 1rem;
+        padding-top: 10px%;
     }
     .box-container {
         font-size: 1rem;
